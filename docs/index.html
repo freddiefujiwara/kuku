@@ -177,7 +177,7 @@ a:hover {
 			</tbody>
 		</table>
 		<audio id="audio" src=""></audio>
-	        <script>
+	        <script type="text/javascript">
            	    const play = (message) => {
                         const a = document.getElementById('audio');
 			a.pause();
@@ -196,6 +196,14 @@ a:hover {
 			    ['はちいちが、はち', 'はちに、じゅうろく', 'はちさん、にじゅうし', 'はちし、さんじゅうに', 'はちご、しじゅう', 'はちろく、しじゅうはち', 'はちしち、ごじゅうろく', 'はっぱ、ろくじゅうし', 'はっく、しちじゅうに'],
 			    ['くいちが、く', 'くに、じゅうはち', 'くさん、にじゅうしち', 'くし、さんじゅうろく', 'くご、しじゅうご', 'くろく、ごじゅうし', 'くしち、ろくじゅうさん', 'くはし、ちじゅうに', 'くく、はちじゅういち']
 		    ];
+	        </script>
+		<script type="text/javascript">
+                var swsource = "serviceWorker.js";
+                if("serviceWorker" in navigator) {
+                  navigator.serviceWorker.register(swsource)
+                  .then(function(reg){console.log('SW scope:',reg.scope);})
+                  .catch(function(err){console.log('SW registration failed:',err);});
+                };
 	        </script>
 	</body>
 </html>
