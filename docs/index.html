@@ -51,7 +51,6 @@ a:hover {
 		<title>ha.ze.gs</title>
 	</head>
 	<body>
-                <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 		<table>
 			<thead>
 				<tr>
@@ -199,35 +198,17 @@ a:hover {
 			    ['くいちが、く', 'くに、じゅうはち', 'くさん、にじゅうしち', 'くし、さんじゅうろく', 'くご、しじゅうご', 'くろく、ごじゅうし', 'くしち、ろくじゅうさん', 'くはし、ちじゅうに', 'くく、はちじゅういち']
 		    ];
 	        </script>
-		<script>
-    let deferredPrompt;
-
-    window.addEventListener('beforeinstallprompt', function(event) {
-      // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
-      // Stash the event so it can be triggered later.
-      deferredPrompt = e;
-    });
-
-    // Installation must be done by a user gesture! Here, the button click
-    btnAdd.addEventListener('click', (e) => {
-      // hide our user interface that shows our A2HS button
-      btnAdd.style.display = 'none';
-      // Show the prompt
-      deferredPrompt.prompt();
-      // Wait for the user to respond to the prompt
-      deferredPrompt.userChoice
-        .then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the A2HS prompt');
-          } else {
-            console.log('User dismissed the A2HS prompt');
-          }
-          deferredPrompt = null;
-        });
-    });
-
+		<script type="text/javascript">
+        var swsource = "/serviceWorker.js";
+        if("serviceWorker" in navigator) {
+          navigator.serviceWorker.register(swsource)
+            .then(function(reg){
+              console.log('SW scope: ', reg.scope);
+            })
+            .catch(function(err) {
+              console.log('SW registration failed: ', err);
+            });
+        };
     </script>
-		<amp-install-serviceworker src="serviceworker.js" layout="nodisplay" data-iframe-src="install-service-worker.html"></amp-install-serviceworker>
 	</body>
 </html>
