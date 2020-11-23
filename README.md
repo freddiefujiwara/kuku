@@ -2,7 +2,7 @@
 Multiplication table in Japanese
 
 # demo
-[![demo]()](https://freddiefujiwara.com/kuku/)
+[![demo](http://freddiefujiwara.com/kuku/images/demo.gif)](https://freddiefujiwara.com/kuku/)
 
 [TRY IT](https://freddiefujiwara.com/kuku/)
 
@@ -24,6 +24,4 @@ const play = (message) => {
 		    }
 ```
 ## set up gh-pages
-
-
-
+![gh-pages](http://freddiefujiwara.com/kuku/images/gh-pages.png)
