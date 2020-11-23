@@ -1,1 +1,199 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+table {
+	width: 100%;
+	font-size: 14px;
+	color: black;
+}
+thead {
+	background-color: gray;
+	color: white;
+}
+th,td {
+	border: 0;
+	height: 50px;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	text-align: center;
+}
+
+td.head {
+	background-color: gray;
+	color: white;
+}
+a {
+	width: 100%;
+	height:100%;
+	display: block;
+	text-align: center;
+	padding-top:15px;
+	color:inherit;
+	text-decoration: none;
+	font-weight:bold;
+}
+a:hover {
+	background-color: black;
+	color: white;
+}
+		</style>
+		<title>ha.ze.gs</title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>9x9</th>
+					<th>&nbsp;1&nbsp;</th>
+					<th>&nbsp;2&nbsp;</th>
+					<th>&nbsp;3&nbsp;</th>
+					<th>&nbsp;4&nbsp;</th>
+					<th>&nbsp;5&nbsp;</th>
+					<th>&nbsp;6&nbsp;</th>
+					<th>&nbsp;7&nbsp;</th>
+					<th>&nbsp;8&nbsp;</th>
+					<th>&nbsp;9&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="head">1</td>
+					<td><a href="javascript:play(kuku[0][0]);">&nbsp;1&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][0]);">&nbsp;2&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][0]);">&nbsp;3&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][0]);">&nbsp;4&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][0]);">&nbsp;5&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][0]);">&nbsp;6&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][0]);">&nbsp;7&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][0]);">&nbsp;8&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][0]);">&nbsp;9&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">2</td>
+					<td><a href="javascript:play(kuku[0][1]);">&nbsp;2&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][1]);">&nbsp;4&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][1]);">&nbsp;6&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][1]);">&nbsp;8&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][1]);">10&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][1]);">12&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][1]);">14&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][1]);">16&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][1]);">18&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">3</td>
+					<td><a href="javascript:play(kuku[0][2]);">&nbsp;3&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][2]);">&nbsp;6&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][2]);">&nbsp;9&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][2]);">12&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][2]);">15&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][2]);">18&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][2]);">21&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][2]);">24&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][2]);">27&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">4</td>
+					<td><a href="javascript:play(kuku[0][3]);">&nbsp;4&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][3]);">&nbsp;8&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][3]);">12&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][3]);">16&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][3]);">20&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][3]);">24&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][3]);">28&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][3]);">32&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][3]);">36&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">5</td>
+					<td><a href="javascript:play(kuku[0][4]);">&nbsp;5&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][4]);">10&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][4]);">15&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][4]);">20&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][4]);">25&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][4]);">30&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][4]);">35&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][4]);">40&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][4]);">45&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">6</td>
+					<td><a href="javascript:play(kuku[0][5]);">&nbsp;6&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][5]);">12&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][5]);">18&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][5]);">24&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][5]);">30&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][5]);">36&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][5]);">42&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][5]);">48&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][5]);">54&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">7</td>
+					<td><a href="javascript:play(kuku[0][6]);">&nbsp;7&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][6]);">14&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][6]);">21&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][6]);">28&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][6]);">35&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][6]);">42&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][6]);">49&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][6]);">56&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][6]);">63&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">8</td>
+					<td><a href="javascript:play(kuku[0][7]);">&nbsp;8&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][7]);">16&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][7]);">24&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][7]);">32&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][7]);">40&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][7]);">48&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][7]);">56&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][7]);">64&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][7]);">72&nbsp;</a></td>
+				</tr>
+				<tr>
+					<td class="head">9</td>
+					<td><a href="javascript:play(kuku[0][8]);">&nbsp;9&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[1][8]);">18&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[2][8]);">27&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[3][8]);">36&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[4][8]);">45&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[5][8]);">54&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[6][8]);">63&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[7][8]);">72&nbsp;</a></td>
+					<td><a href="javascript:play(kuku[8][8]);">81&nbsp;</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<audio id="audio" src=""></audio>
+	        <script>
+           	    const play = (message) => {
+                        const a = document.getElementById('audio');
+			a.pause();
+			a.currentTime = 0;
+		        a.src = `https://asia-northeast1-freddiefujiwara.cloudfunctions.net/tts?mp3=mp3&lang=ja&message=${encodeURIComponent(message)}`;
+			a.play();
+		    }
+                    const kuku = [
+			    ['いんいちが、いち', 'いんにが、に', 'いんさんが、さん', 'いんしが、し', 'いんごが、ご', 'いんろくが、ろく', 'いんしちが、しち', 'いんはちが、はち', 'いんくが、く'],
+			    ['にいちが、に', 'ににんが、し', 'にさんが、ろく', 'にしが、はち', 'にご、じゅう', 'にろく、じゅうに', 'にしち、じゅうし', 'にはち、じゅうろく', 'にく、じゅうはち'],
+			    ['さんいちが、さん', 'さんにが、ろく', 'さざんが、きゅう', 'さんし、じゅうに', 'さんご、じゅうご', 'さぶろく、じゅうはち', 'さんしち、にじゅういち', 'さんぱ、にじゅうし', 'さんく、にじゅうしち'],
+			    ['しいちが、し', 'しにが、はち', 'しさん、じゅうに', 'しし、じゅうろく', 'しご、にじゅう', 'しろく、にじゅうし', 'ししち、にじゅうはち', 'しハ、さんじゅうに', 'しく、さんじゅうろく'],
+			    ['ごいちが、ご', 'ごに、じゅう', 'ごさん、じゅうご', 'ごし、にじゅう', 'ごご、にじゅうご', 'ごろく、さんじゅう', 'ごしち、さんじゅうご', 'ごはち、しじゅう', 'ごっく、しじゅうご'],
+			    ['ろくいちが、ろく', 'ろくに、じゅうに', 'ろくさん、じゅうはち', 'ろくし、にじゅうし', 'ろくご、さんじゅう', 'ろくろく、さんじゅうろく', 'ろくしち、しじゅうに', 'ろくハ、しじゅうはち', 'ろっく、ごじゅうし'],
+			    ['しちいちが、しち', 'しちに、じゅうし', 'しちさん、にじゅういち', 'しちし、にじゅうはち', 'しちご、さんじゅうご', 'しちろく、しじゅうに', 'しちしち、しじゅうく', 'しちハ、ごじゅうろく', 'しちく、ろくじゅうさん'],
+			    ['はちいちが、はち', 'はちに、じゅうろく', 'はちさん、にじゅうし', 'はちし、さんじゅうに', 'はちご、しじゅう', 'はちろく、しじゅうはち', 'はちしち、ごじゅうろく', 'はっぱ、ろくじゅうし', 'はっく、しちじゅうに'],
+			    ['くいちが、く', 'くに、じゅうはち', 'くさん、にじゅうしち', 'くし、さんじゅうろく', 'くご、しじゅうご', 'くろく、ごじゅうし', 'くしち、ろくじゅうさん', 'くはし、ちじゅうに', 'くく、はちじゅういち']
+		    ];
+	        </script>
+	</body>
+</html>
