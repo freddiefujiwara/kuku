@@ -6,12 +6,12 @@ Multiplication table in Japanese
 
 [TRY IT](https://freddiefujiwara.com/kuku/)
 
-# how to install
+# how to deploy
 ## fork this
 fork https://github.com/freddiefujiwara/kuku
 
 ## setup cloud functions
-./cloud-functions/index.js and package.json -> deploy to google cloud functions
+./cloud-functions/index.js and package.json -> deploy to your google cloud functions
 
 ## modify ./docs/index.html
 ```javascript
