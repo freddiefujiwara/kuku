@@ -1,13 +1,14 @@
 {
-	"name":				"",
-	"short_name":		"",
-	"description":		"",
-	"start_url":		"/",
-	"display":			"standalone",
-	"orientation":		"any",
-	"background_color":	"#fff",
-	"theme_color":		"#fff",
-	"orientation":		"any",
+        "short_name": "しゃべ99",
+	"name": "しゃべる99表",
+	"lang": "ja",
+	"description": "しゃべる九九だよ",
+	"start_url": "https://freddiefujiwara.com/kuku/",
+	"background_color": "#00aae7",
+	"theme_color": "#00aae7",
+	"dir": "ltr",
+	"display": "standalone",
+	"orientation": "any",
 	"icons": [
 		{
 			"src": "icon/android-chrome-36x36.png",
